@@ -25,7 +25,7 @@ resource "aws_instance" "ec2" {
   tags = {
     Name = "ec2-epam-wordpress"
   }
-  key_name = key_pair.key_name
+  key_name = var.key_name
 }
 
 resource "aws_instance" "bastion" {
@@ -36,5 +36,5 @@ resource "aws_instance" "bastion" {
   tags = {
     Name = "bastion"
   }
-  key_name = key_pair.key_name
+  key_name = var.key_name
 }
