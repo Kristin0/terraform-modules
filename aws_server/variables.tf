@@ -14,6 +14,9 @@ variable "subnet_private_ids" {
   
 }
 
+variable "key_name" {
+  
+}
 /*variable "rds_admin_username" {
   
 }
